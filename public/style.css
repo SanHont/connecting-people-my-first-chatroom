@@ -1,0 +1,123 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: rgb(162, 163, 120);
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  width: 25rem;
+  height: 35rem;
+  background: rgb(160, 216, 179);
+  border-radius: 1rem;
+  border: 2px solid rgb(131, 118, 79);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.23rem;
+}
+
+section h1 span {
+  font-size: 0.55rem;
+  display: inline-block;
+  width: 4.5rem;
+  color: rgb(131, 118, 79);
+  text-transform: lowercase;
+}
+
+section ul {
+  margin: 0;
+  padding: 0.2em;
+  list-style-type: none;
+  flex-grow: 2;
+  width: 20em;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+}
+
+section ul > li {
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem 0.4rem 0.4rem 0rem;
+  width: max-content;
+  margin: 0.2rem;
+  font-size: 0.8rem;
+  background: #E5F9DB;
+}
+
+section form {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  width: 18rem;
+  height: 2rem;
+  display: flex;
+}
+
+section form input[type='text'] {
+  margin: 0;
+  padding: 0 1rem;
+  border: none;
+  height: 2rem;
+  flex-grow: 2;
+  background: rgb(239, 238, 238);
+  box-shadow: inset 0.2rem 0.2rem 0.3rem 0 rgba(209, 205, 199, 0.5);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: 0;
+  opacity: 80%;
+  outline: none;
+}
+
+section form > button {
+  padding: 0 0.6rem 0 0.4rem;
+  width: 2rem;
+  background: rgb(239, 238, 238);
+  box-shadow: inset -0.2rem 0.2rem 0.3rem 0 rgba(209, 205, 199, 0.5);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: 0;
+  opacity: 80%;
+  outline: none;
+  transition: 0.2s;
+}
+
+section form > button span {
+  display: none;
+}
+
+section form > button::after {
+  content: '➤';
+}
+
+section form > button:hover {
+  padding-left: 1rem;
+}
+
+section form > button:active {
+  padding-left: 1rem;
+  color: red;
+}
