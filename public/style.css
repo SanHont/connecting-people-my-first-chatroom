@@ -1,3 +1,35 @@
+/*--------------------------------------------------------------
+# VARIABLES
+--------------------------------------------------------------*/
+
+:root {
+  --c-body-text-color: #ffffff;
+
+  --c-dark-grey-bg: #242529;
+  --c-area-bg: #36383e;
+
+  --c-player-cards: #6f6f6f;
+  --c-player-cards-text: #fff;
+  --c-female-gender: #f476ff;
+  --c-male-gender: #76c6ff;
+
+  --c-blocks-input: #ff4b4b;
+  --c-turnovers-input: #ecd45e;
+  --c-goals-input: #4ed19d;
+  --c-assists-input: #9570cf;
+
+  --c-score-green: #37c356;
+  --c-score-light-green: #5dff81;
+  --c-score-red: #c91e1e;
+  --c-score-light-red: #ff4d4d;
+  --c-middle-score: #fff;
+
+  --c-button-border: #efffad;
+
+  --c-live-button: #ff1a1a;
+}
+
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +38,7 @@ body {
   overflow: hidden;
   min-height: 100vh;
   min-width: 100vw;
-  background: rgb(162, 163, 120);
+  background: #36383e;
 }
 
 main {
@@ -22,9 +54,9 @@ main {
 section{
   width: 25rem;
   height: 35rem;
-  background: rgb(160, 216, 179);
+  background: #6f6f6f;
   border-radius: 1rem;
-  border: 2px solid rgb(131, 118, 79);
+  border: 2px solid #242529;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +65,7 @@ section{
 section h1 {
   margin: 0;
   padding: 0;
+  color: #fff;
   padding-top: 1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -43,7 +76,7 @@ section h1 span {
   font-size: 0.55rem;
   display: inline-block;
   width: 4.5rem;
-  color: rgb(131, 118, 79);
+  color: #fff;
   text-transform: lowercase;
 }
 
@@ -65,8 +98,10 @@ section ul > li {
   border-radius: 0.4rem 0.4rem 0.4rem 0rem;
   width: max-content;
   margin: 0.2rem;
+  color: #fff;
   font-size: 0.8rem;
-  background: #E5F9DB;
+  border: 2px solid #242529;
+  background: #9570cf;
 }
 
 section form {
